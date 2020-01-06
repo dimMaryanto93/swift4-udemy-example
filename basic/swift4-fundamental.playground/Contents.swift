@@ -55,3 +55,11 @@ let myNames : Array<String> = ["Dimas Maryanto", "Muhamad Yusuf", "Prima", "Abdu
 for name in myNames {
     print(name);
 }
+
+let reversedNumbers: Array<Int> = (1...100).reversed();
+var ganjilNumbers : Array<Int> = [];
+for number in reversedNumbers where number % 2 == 0 && number <= 50 {
+    ganjilNumbers.append(number)
+}
+
+print(ganjilNumbers);
