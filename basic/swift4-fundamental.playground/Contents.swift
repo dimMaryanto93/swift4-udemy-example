@@ -45,3 +45,13 @@ func descriptionOfScore(loveScore: Int) -> String {
 
 let score = loveCalculatorScore(yourName: "Test", theirName: "Test");
 print(descriptionOfScore(loveScore: score));
+
+// Looping
+for number in 1...10 where number % 2 == 0 {
+    print(number);
+}
+
+let myNames : Array<String> = ["Dimas Maryanto", "Muhamad Yusuf", "Prima", "Abdul"];
+for name in myNames {
+    print(name);
+}
