@@ -1,5 +1,3 @@
-import UIKit;
-
 // data type
 var myAge: Int = 30;
 
@@ -15,12 +13,13 @@ let bilanganPecahanDouble: Double = 3.14;
 
 // function
 
-func getMilk(qty: Int, price: Int){
+func getMilk(qty: Int, price: Int = 0) -> Int {
     print("go to the shops")
     print("buy \(qty) milk");
     
     let subTotal =  qty * price;
-    print("pay Rp.\(subTotal)");
+    return subTotal;
 }
 
-getMilk(qty: 2, price: 2000);
+let subTotal = getMilk(qty: 2, price: 10);
+print("Sub Total is Rp.\(subTotal)")
